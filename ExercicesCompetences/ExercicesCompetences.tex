@@ -1,0 +1,52 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Exercices de SII},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+
+\input{../../style/new_style}
+\input{../../style/macros_SII}
+\input{../../style/Cycle_04_Entete}
+
+
+\livrettrue
+
+\newif\ifcorrige
+\corrigetrue
+\corrigefalse
+
+\def\xxYCartouche{-2.25cm}
+\def\xxYongletGarde{.5cm}
+\def\xxYOnget{.9cm}
+\begin{document}
+
+\newcommand{\macrocomp}{macro_competences}
+\newcommand{\comp}{competences}
+\newcommand{\td}{fichier_td}
+
+
+
+
+% Page de garde
+
+
+%% Exercices
+%%%%%%%%
+
+\begin{multicols}{2}
+\renewcommand{\td}{Cy_04_03_Activation_01_Exosquelette}
+\graphicspath{{../../style/png/}{../../\chap/Cours/images/}}
+\input{../../\chap/\td/\td.tex}
+
+
+
+%%%%%%%%%%%%%
+
+
+
+
+
+\end{multicols}
+\end{document}
+
+
+
