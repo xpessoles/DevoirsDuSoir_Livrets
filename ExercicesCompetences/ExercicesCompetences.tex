@@ -3,49 +3,90 @@
     pdftitle={Exercices de SII},
     pdfauthor={Xavier Pessoles}]{hyperref}
 
-\input{../../style/new_style}
-\input{../../style/macros_SII}
-\input{../../style/Cycle_04_Entete}
-
-
-\livrettrue
-
-\newif\ifcorrige
-\corrigetrue
-\corrigefalse
-
-\def\xxYCartouche{-2.25cm}
-\def\xxYongletGarde{.5cm}
-\def\xxYOnget{.9cm}
-\begin{document}
+\input{../../Style/packages}
+\input{../../Style/new_style}
+\input{../../Style/macros_SII}
+\input{../../Style/environment}
+\input{../../Style/Entete_Modeliser}
+\usepackage{../../Style/UPSTI_pedagogique}
 
 \newcommand{\macrocomp}{macro_competences}
 \newcommand{\comp}{competences}
 \newcommand{\td}{fichier_td}
+\newcommand{\repExo}{dossier}
+\newcommand{\repStyle}{../../Style}
 
+
+
+
+\def\xxYCartouche{-2.25cm}
+\def\xxYongletGarde{.5cm}
+\def\xxYOnget{.9cm}
+
+
+\begin{document}
+
+\def\xxcompetences{}
+\def\xxfigures{}
+
+\graphicspath{{\repStyle/png/}}
 
 
 
 % Page de garde
+\input{../../Style/pagegarde_livret_exos}
+
+\setlength{\columnseprule}{.1pt}
+
+%\vspace{2cm}
+
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+
 
 
 %% Exercices
-%%%%%%%%
 
+%% Sujets
+\proffalse
 \begin{multicols}{2}
-\renewcommand{\td}{Cy_04_03_Activation_01_Exosquelette}
-\graphicspath{{../../style/png/}{../../\chap/Cours/images/}}
-\input{../../\chap/\td/\td.tex}
+\section{Proposer un modèle de connaissance et de comportement}
+\subsection{Proposer un modèle cinématique à partir d'un système réel ou d'une maquette numérique}
 
 
+\renewcommand{\repExo}{../../ExercicesCompetences/B2_ProposerModele/B2_12_ModeliserSchemaCinematiques}
+\renewcommand{\td}{01_R}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
 
-%%%%%%%%%%%%%
 
-
-
+\renewcommand{\repExo}{../../ExercicesCompetences/B2_ProposerModele/B2_12_ModeliserSchemaCinematiques}
+\renewcommand{\td}{02_T}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
 
 
 \end{multicols}
+\newpage
+
+% Corriges
+\section{Proposer un modèle de connaissance et de comportement -- Corrigés}
+\subsection{Proposer un modèle cinématique à partir d'un système réel ou d'une maquette numérique}
+\proftrue
+
+\renewcommand{\repExo}{../../ExercicesCompetences/B2_ProposerModele/B2_12_ModeliserSchemaCinematiques}
+\renewcommand{\td}{01_R}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+
+\renewcommand{\repExo}{../../ExercicesCompetences/B2_ProposerModele/B2_12_ModeliserSchemaCinematiques}
+\renewcommand{\td}{02_T}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+
 \end{document}
 
 
