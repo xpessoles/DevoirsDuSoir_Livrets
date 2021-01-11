@@ -1,0 +1,74 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Exercices de SII},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+
+\input{../../Style/packages}
+\input{../../Style/new_style}
+\input{../../Style/macros_SII}
+\input{../../Style/environment}
+\usepackage{../../Style/UPSTI_pedagogique}
+
+\newcommand{\macrocomp}{macro_competences}
+\newcommand{\comp}{competences}
+\newcommand{\td}{fichier_td}
+\newcommand{\repExo}{dossier}
+\newcommand{\repStyle}{../../Style}
+
+
+
+
+\def\xxYCartouche{-2.25cm}
+\def\xxYongletGarde{.5cm}
+\def\xxYOnget{.9cm}
+
+
+\begin{document}
+
+\def\xxcompetences{}
+\def\xxfigures{}
+
+\graphicspath{{\repStyle/png/}}
+
+
+
+\setlength{\columnseprule}{.1pt}
+
+%% MODELISER
+% Page de garde
+\input{../../Style/Entete_Modeliser}
+%\input{../../Style/pagegarde_livret_exos}
+%\vspace{2cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+%% Sujets
+\proffalse
+\begin{multicols}{2}
+%\input{B2-04.tex}
+%\input{B2-10.tex}
+%\input{B2-12.tex}
+%\input{B2-13.tex}
+%\input{B2-14.tex}
+%\input{C1_05_ProposerDemarcheActionMecaLoiMvt_PFS.tex}
+%\input{C1_05_ProposerDemarcheActionMecaLoiMvt_PFD.tex}
+%\input{C2-08-TorseursDynamiques}
+%\input{C2-09.tex}
+\input{C2-09-TEC.tex}
+\end{multicols}
+
+%%% Corrigés
+%\proftrue
+%\newpage
+%\input{B2-04.tex}
+%\input{B2-10.tex}
+%\input{B2-12.tex}
+%\input{B2-13.tex}
+%\input{B2-14.tex}
+
+\newpage
+\printindex
+\end{document}
+
+
+
