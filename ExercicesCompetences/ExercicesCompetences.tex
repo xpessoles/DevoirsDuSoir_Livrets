@@ -35,41 +35,77 @@
 \setlength{\columnseprule}{.1pt}
 
 %% MODELISER
-% Page de garde
+%% Page de garde
 \input{../../Style/Entete_Modeliser}
-%\input{../../Style/pagegarde_livret_exos}
-%\vspace{2cm}
-\pagestyle{fancy}
-\thispagestyle{plain}
-
-%% Sujets
-\proffalse
-\begin{multicols}{2}
-%\input{B2-04.tex}
-%\input{B2-10.tex}
-%\input{B2-12.tex}
-%\input{B2-13.tex}
-%\input{B2-14.tex}
-%\input{C1_05_ProposerDemarcheActionMecaLoiMvt_PFS.tex}
-\input{C1_05_ProposerDemarcheActionMecaLoiMvt_PFD.tex}
-\input{C2-08-TorseursDynamiques}
+%%\input{../../Style/pagegarde_livret_exos}
+%%\vspace{2cm}
+%\pagestyle{fancy}
+%\thispagestyle{plain}
+%
+%%% Sujets
+%\proffalse
+%\begin{multicols}{2}
+%%\input{B2-04.tex}
+%%\input{B2-10.tex}
+%%\input{B2-12.tex}
+%%\input{B2-13.tex}
+%%\input{B2-14.tex}
+%%\input{C1_05_ProposerDemarcheActionMecaLoiMvt_PFS.tex}
+%\input{C1_05_ProposerDemarcheActionMecaLoiMvt_PFD.tex}
+%\input{C2-08-TorseursDynamiques}
 %\input{C2-09.tex}
-%\input{C2-09-TEC.tex}
-\end{multicols}
-
-%%% Corrigés
-\proftrue
-%\newpage
-\input{C1_05_ProposerDemarcheActionMecaLoiMvt_PFD.tex}
-\input{C2-08-TorseursDynamiques}
-%\input{B2-04.tex}
-%\input{B2-10.tex}
-%\input{B2-12.tex}
-%\input{B2-13.tex}
-%\input{B2-14.tex}
+%%\input{C2-09-TEC.tex}
+%\end{multicols}
+%
+%%%% Corrigés
+%\proftrue
+%%\newpage
+%\input{C1_05_ProposerDemarcheActionMecaLoiMvt_PFD.tex}
+%\input{C2-08-TorseursDynamiques}
+%\input{C2-09.tex}
+%%\input{B2-04.tex}
+%%\input{B2-10.tex}
+%%\input{B2-12.tex}
+%%\input{B2-13.tex}
+%%\input{B2-14.tex}
 
 \newpage
-\printindex
+
+\proffalse
+\renewcommand{\repExo}{../../ExercicesCompetences/C1_ProposerDemarche/C1_05_ProposerDemarcheActionMecaLoiMvt_PFD}
+
+\begin{multicols}{2}
+\renewcommand{\td}{06_TR}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_08_TorseurDynamique}
+\renewcommand{\td}{06_TR}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMouvement}
+\renewcommand{\td}{06_TR}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+\end{multicols}{2}
+\newpage
+\proftrue
+\renewcommand{\repExo}{../../ExercicesCompetences/C1_ProposerDemarche/C1_05_ProposerDemarcheActionMecaLoiMvt_PFD}
+\renewcommand{\td}{06_TR}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_08_TorseurDynamique}
+\renewcommand{\td}{06_TR}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMouvement}
+\renewcommand{\td}{06_TR}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
 \end{document}
 
 
