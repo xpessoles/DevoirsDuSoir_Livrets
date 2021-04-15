@@ -6,3 +6,7 @@
 *.log
 *.xml
 *.ptc
+*.ind
+*.ilg
+ExercicesCompetences/ExercicesCompetences_FULL.ilg
+ExercicesCompetences/ExercicesCompetences_FULL.ind
