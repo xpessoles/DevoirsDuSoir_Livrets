@@ -1,2 +1,2 @@
 set table "gnuplot/ExercicesCompetences/8.table"; set format "%.5f"
-set samples 50.0; set parametric; plot [t=-3:3] [] [] log10(10**t),-180/3.1415957*atan(10*10**t) + -180/3.1415957*atan(0.1*10**t)
+set samples 50.0; set parametric; plot [t=-2:2] [] [] log10(10**t),20*log10(abs(6/sqrt(1+(0.3*10**t)**2)))
