@@ -16,12 +16,22 @@
 \newcommand{\repStyle}{../../Style}
 
 
-
+\usepackage{bodegraph}
 
 \def\xxYCartouche{-2.25cm}
 \def\xxYongletGarde{.5cm}
 \def\xxYOnget{.9cm}
 
+
+\definecolor{bleuxp}{RGB}{0,84,127}
+\definecolor{bleuxpc}{RGB}{234,243,245}
+\definecolor{orangexp}{RGB}{253,173,87}
+\definecolor{orangexpc}{RGB}{254,230,204}
+\definecolor{violetxp}{RGB}{128,0,128}
+\definecolor{violetxpc}{RGB}{242,230,242}
+
+\definecolor{rougexp}{RGB}{238,104,93}
+\definecolor{rougexpc}{RGB}{247,184,179}
 
 \begin{document}
 
@@ -52,25 +62,45 @@
 \pagestyle{fancy}
 \thispagestyle{plain}
 
-
 %\renewcommand{\td}{04_RR}
 %\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
 %\input{\repExo/\td/\td.tex}
-\section{Mettre en œuvre une démarche de résolution analytique}
-\begin{multicols}{2}
-\input{C2-06-geo}
+%\section{Mettre en œuvre une démarche de résolution analytique}
+%\begin{multicols}{2}
+%\input{C2-06-geo}
 %\input{C2-06-transmetteurs}
 %\input{C2-08-TorseursDynamiques}
 %\input{C2-09}
 %\input{C2-09-TEC}
-\end{multicols}
+%\end{multicols}
 
 
+
+\proftrue
+\renewcommand{\repExo}{../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_02_DiagrammeBode}
+\renewcommand{\td}{510_01_Divers}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+%
+%
+%\renewcommand{\repExo}{../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_02_DiagrammeBode}
+%\renewcommand{\td}{510_02_Divers}
+%\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+%\input{\repExo/\td/\td.tex}
+%
+%
+%
+%\renewcommand{\repExo}{../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_02_DiagrammeBode}
+%\renewcommand{\td}{510_03_Divers}
+%\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+%\input{\repExo/\td/\td.tex}
+
+
+
+%\renewcommand{\repExo}{../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_02_DiagrammeBode}
+%\renewcommand{\td}{511_Divers}
+%\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+%\input{\repExo/\td/\td.tex}
 
 \end{document}
 
-
-\renewcommand{\repExo}{../../ExercicesCompetences/B2_ProposerModele/B2_10_CartacteristiquesSolides}
-\renewcommand{\td}{43_Cylindre}
-\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
-\input{\repExo/\td/\td.tex}
